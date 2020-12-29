@@ -14,10 +14,11 @@
     </p>
     <div v-for="profile in profiles" :key="profile.name">
       <v-icon>{{ profile.icon }}</v-icon>
-      <b>{{ profile.name }}</b>:
-      <a v-if="profile.link" :href="profile.desc">{{ profile.desc }}</a>
+      <a v-if="profile.link" :href="profile.link">
+        <b>{{ profile.name }}</b>
+      </a>
       <span v-else>
-        {{ profile.desc }}
+        {{ profile.name }}: {{ profile.desc }}
       </span>
     </div>
   </div>
@@ -34,26 +35,22 @@ export default defineComponent({
       {
         name: 'email',
         icon: 'mdi-email',
-        desc: 'david [at] qiu [dot] dev',
-        link: false
+        desc: 'david [at] qiu.dev'
       },
       {
         name: 'linkedin',
         icon: 'mdi-linkedin',
-        desc: 'https://www.linkedin.com/in/senpie/',
-        link: true
+        link: 'https://www.linkedin.com/in/senpie/'
       },
       {
         name: 'stack overflow',
         icon: 'mdi-stack-overflow',
-        desc: 'https://stackoverflow.com/users/12548458/qiu',
-        link: true
+        link: 'https://stackoverflow.com/users/12548458/qiu'
       },
       {
         name: 'stack exchange',
         icon: 'mdi-stack-exchange',
-        desc: 'https://stackexchange.com/users/10699787/qiu',
-        link: true
+        link: 'https://stackexchange.com/users/10699787/qiu'
       }
     ]
     return { age, profiles }
