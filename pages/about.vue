@@ -3,15 +3,15 @@
     <h1>
       about
     </h1>
-    <div>
+    <p>
       hi. i'm david qiu. i'm a {{ age }}-year-old currently looking into web development.
-    </div>
-    <div>
+    </p>
+    <p>
       i also review music and write sometimes.
-    </div>
-    <div>
-      i don't use social media, but you can stalk me here:
-    </div>
+    </p>
+    <p>
+      i don't use social media, but you can stalk me below:
+    </p>
     <div v-for="profile in profiles" :key="profile.name">
       <v-icon>{{ profile.icon }}</v-icon>
       {{ profile.name }}: {{ profile.desc }}

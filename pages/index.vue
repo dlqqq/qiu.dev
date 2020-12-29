@@ -1,17 +1,15 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col lg="12">
-      <h1>
-        hi there.
-      </h1>
-    </v-col>
-    <v-col lg="12">
+  <div>
+    <h1>
+      hi there.
+    </h1>
+    <p>
       i'm david qiu. welcome to my homepage.
-    </v-col>
-    <v-col lg="12">
+    </p>
+    <p>
       i write code and other stuff.
-    </v-col>
-  </v-row>
+    </p>
+  </div>
 </template>
 
 <script>
