@@ -1,11 +1,11 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
-      :mini-variant="miniVariant"
+      v-model="drawer"
       clipped
-      fixed
       app
       right
+      floating
     >
       <v-list>
         <v-list-item
@@ -33,9 +33,9 @@
       <v-spacer />
       <v-btn
         icon
-        @click.stop="miniVariant = !miniVariant"
+        @click.stop="drawer = !drawer"
       >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+        <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>
     <v-main class="ma-10">
@@ -67,7 +67,7 @@ export default {
           to: '/techstack'
         }
       ],
-      miniVariant: false,
+      drawer: true,
       title: 'qiu.dev'
     }
   }
@@ -76,6 +76,6 @@ export default {
 
 <style lang="scss">
 #title {
-    font-size: 30px
+  font-size: 30px;
 }
 </style>
