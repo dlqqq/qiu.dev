@@ -16,11 +16,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-// .nuxt-content h1 {
-//   font-family: 'Righteous';
-//   font-size: 60px;
-// }
-
 // remove extra whitespace at lists with >1 element
 .nuxt-content ul li:last-of-type p {
   margin-bottom: 0px;
