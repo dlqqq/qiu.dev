@@ -9,6 +9,9 @@
     <p>
       i write code and other stuff.
     </p>
+    <p>
+      this page is very much a work-in-progress; i plan some cool stuff for this website.
+    </p>
   </div>
 </template>
 
