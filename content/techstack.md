@@ -1,40 +1,68 @@
 # techstack
 
-This page contains a list of all the technologies I've used for past projects. They're roughly ordered in terms of experience; I primarily use the technologies listed first.
 
-This page is a work-in-progress. I might add other sections later.
+This page contains a list of all the technologies I've used for past projects.
+They're roughly ordered in terms of experience; I primarily use the technologies
+listed first.
 
+## Programming and markup languages
 
-## Programming languages
-
-- TypeScript, JavaScript (ES6+), HTML5, CSS3, Python, Rust, C, C++
-
+- TypeScript, JavaScript (ES6+), Ruby, HTML5, CSS3, Python, Rust, C, C++
 
 ## Client-side (frontend) frameworks
 
-- **SPA (Single Page Application)**: Quasar
+- **SPA (Single Page Application)**: React, Quasar, Vue.js
 
-- **PWA (Progressive Web Application)**: Quasar
+- **PWA (Progressive Web Application)**: React, Quasar, Vue.js
 
-- **SSR (Server-side Rendering)**: Quasar, NuxtJS
+- **SSR (Server-side Rendering)**: React, Quasar, NuxtJS
 
-- **SSG (Static Site Generation)**: NuxtJS, Vuepress
-
+- **SSG (Static Site Generation)**: React, Jekyll, NuxtJS, Vuepress
 
 ## Server-side (backend) frameworks
 
-- **node.js**: Express
+- **Node.js**: Express
 
+- **Ruby**: Ruby on Rails
 
-## Testing frameworks
+## Databases
 
-- Jest, Mocha
+I mostly interact with these through abstractions like ORMs or backend
+frameworks.
 
+- **SQL**: PostgreSQL (via `ActiveRecord` in Rails)
+
+- **NoSQL**: MongoDB (via MongoID in Rails)
+
+## Testing utilities
+
+Snapshot tests rock.
+
+- Frameworks: Jest, Mocha
+
+- React testing utilities: `@testing-library/react`, Enzyme.
 
 ## Cloud infrastructures
 
-- Amazon EC2, Netlify
+I'm no devops wizard, but I can build a fine pipeline.
 
+- Google cloud platform API (Google Cloud Storage, Google Cloud Functions)
+
+- Netlify CMS and Netlify functions (same as AWS Lambda really)
+
+- Amazon EC2, S3, Lambda
+
+## React.js
+
+I vastly prefer the Hook API and functional components over class components.
+
+- **Component libraries**: Material-UI
+
+- **State management library**: Redux with Hook API (`@reduxjs/toolkit`)
+
+- **GraphQL React client library**: Apollo client
+
+- **Icon libraries**: React Feather, Material-UI icons.
 
 ## Vue.js libraries
 
@@ -45,7 +73,7 @@ type inference and code structure.
 
 - **State management library**: Vuex (there's only one anyways...)
 
-- **Content management system**: @nuxt/content, Vuepress
+- **Content management system**: `@nuxt/content`, Vuepress
 
 
 ## JavaScript libraries
@@ -63,13 +91,13 @@ type inference and code structure.
 
 ## Development tools
 
-- **Bundlers/transpilers**: Webpack + Babel
+- **Bundlers/transpilers**: **Vite**, Webpack + Babel
 
 - **Linters**: ESLint (preferably StandardJS preset)
 
-- **CSS preprocessors**: Sass (preferably SCSS syntax)
+- **CSS preprocessors**: Sass, SCSS
 
-- **CI/CD platforms**: CircleCI, Netlify, AWS CodeCommit
+- **CI/CD platforms**: Netlify, CircleCI
 
 - **GitHub Apps**: Semantic Pull Requests
 
@@ -84,14 +112,14 @@ type inference and code structure.
 
 ## Technologies I want to learn later
 
+- Rust, Go, or some other fun new programming language
+
 - Gulp (debugging webpack loaders sucks, and I hope this is the answer)
 
 - Pug or some other HTML preprocessor (XML is my mortal enemy)
 
 - Octane, SunSpider, or some other performance benchmarker (what's the point of writing clean code if I don't get to prove it?)
 
-- Selenium WebDriver (testing, webscrapers for data analysis, scripting my online orders) 
+- Selenium WebDriver (testing, webscrapers for data analysis, scripting my online orders)
 
 - Django, Flask, or some other Python backend (because JavaScript isn't exactly made to run numpy, pandas, or neural networks)
-
-- Amazon Lambda or other serverless computing platform (easy pricing for my future web apps)
